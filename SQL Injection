@@ -1,1 +1,6 @@
-
+OOB SQLi Attack
+Database-Specific SQLi Functions
+Oracle: UTL_HTTP
+MSSQL:xp_dirtree
+MySQL: LOAD_FILE()
+PostgressSQL: pg_read_file()
