@@ -1,6 +1,21 @@
+SQLi types: In-Band (Error-Based and Union-Based), Blind (Authentication Bypass, Boolean-Based, Time-Based), and Out-of-Band. 
+
 OOB SQLi Attack
 Database-Specific SQLi Functions
 Oracle: UTL_HTTP
 MSSQL:xp_dirtree
 MySQL: LOAD_FILE()
 PostgressSQL: pg_read_file()
+
+Exfiltrate means to secretly move data out of a system without permission. In other words, stealing data and getting it out.
+
+-- MySQL / PostgreSQL / SQL Server
+SELECT table_name FROM information_schema.tables;
+-- PostgreSQL native
+SELECT tablename FROM pg_catalog.pg_tables;
+-- SQL Server native
+SELECT name FROM sys.tables;
+-- Oracle
+SELECT table_name FROM user_tables;
+-- SQLite
+SELECT name FROM sqlite_master WHERE type = 'table';
